@@ -1,0 +1,20 @@
+﻿@model int;
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 well">
+        <form method="post" action="/home/newad">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Name" class="form-control" name="name" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Phone Number" class="form-control" name="phonenumber" />
+                </div>
+            </div>
+            <br />
+            <textarea name="offer" class="form-control" rows="10" placeholder="Offer"></textarea>
+
+            <input type="hidden" name="userId" value="@Model" />
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

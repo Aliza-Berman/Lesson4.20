@@ -1,0 +1,18 @@
+﻿<div class="row" style=" margin-top:60px">
+    <div class="col-md-5 col-md-offset-12 well">
+        <form method="post" action="/account/login">
+            @if (ViewBag.Message != null)
+            {
+                <span class="alert alert-danger" role="alert">@ViewBag.Message</span>
+                <br />
+                <br />
+            }
+
+            <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" />
+            <br />
+            <input type="password" class="form-control" name="password" id="password" placeholder="Your Password" />
+            <br />
+            <button class="btn btn-primary btn-block btn-lg">Login</button>
+        </form>
+    </div>
+</div>
